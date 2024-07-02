@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- WAP to convert years into days and days into years? -->
+
+    <input type="text" name="" id="day" placeholder="Enter a Day" value="">
+    <button type="submit" onclick="sub()">submit</button>
+
+    <input type="text" name="" id="year" placeholder="Enter a Year" value="">
+    <button type="button" onclick="dum()">submit</button>
+    <br><br>
+
+    <input type="text" name="" id="convert_year" placeholder="Show the Year" value="">
+
+    <input type="text" name="" id="convert_day" placeholder="Show the day" value="">
+
+</body>
+<script>
+    function sub() {
+
+        let a = document.getElementById("day").value;
+
+        let yr = a/365;
+        
+        document.getElementById("convert_year").value = yr;
+    }
+
+    function dum(){
+        let b = document.getElementById("year").value;
+
+        let dr = b*365;
+        
+        document.getElementById("convert_day").value = dr;
+        
+    }
+</script>
+
+</html>

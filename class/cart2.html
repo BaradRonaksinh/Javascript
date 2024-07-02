@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:violet;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="name">ronak</h1>
+    <button onclick="changed()" ondblclick="reset()">changed</button>
+</body>
+<script>
+    function changed(){
+        document.getElementById("name").innerHTML="RCB";
+        document.getElementById("name").style.color="yellow";
+        document.getElementById("name").style.backgroundColor="gray";
+    }
+
+    function reset(){
+        document.getElementById("name").innerHTML="ronak";
+        document.getElementById("name").style.color="violet";
+        document.getElementById("name").style.backgroundColor="blueviolet";
+    }
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a JavaScript Program to display the current day and time in the following format.
+Sample Output: Today is Friday. Current Time is 12 PM: 12 : 22 2 ? -->
+
+<p>Today is : <a href="" id="demo"></a>. Current Timr is : <a href="" id="try"></a> .</p>
+</body>
+<script>
+    const d = new Date().getUTCDate();
+    document.getElementById("demo").innerHTML = d;
+
+    const a = new Date().getUTCHours();
+    document.getElementById("try").innerHTML = a;
+</script>
+</html>

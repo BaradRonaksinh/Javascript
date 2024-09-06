@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- What is the drawback of declaring methods directly in JavaScript objects? -->
+
+
+    <p>Memory Inefficiency:
+        When you add a method directly to an object, it creates a separate copy of that method for each instance of the object. This can consume more memory, especially if you have a large number of objects with the same methods.
+        No Prototypal Inheritance:
+        Methods declared directly on an object aren't part of the object's prototype. This means instances of the object won't inherit these methods, limiting code reusability and making it harder to manage shared behavior.
+        Overriding Issues:
+        If you later add a method with the same name to the object's prototype, the method on the instance will shadow (override) the prototype method. This can lead to unexpected behavior, especially if you are working with inheritance.
+        Less Maintainable Code:
+        Mixing data and behavior within the same object can make code harder to read, understand, and maintain. It can also make it more difficult to separate concerns and test your code effectively.
+    </p>
+
+    <script>
+        const p1 = {
+            name :"ronak",
+            greet : function(){
+                console.log("haa bhai," + this.name);
+            }
+        }
+        const p2 = {
+            name :"avntik",
+            greet : function(){
+                console.log("hello ," + this.name);
+            }
+        }
+
+        p1.greet();
+        p2.greet();
+    </script>
+</body>
+</html>

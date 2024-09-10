@@ -1,0 +1,115 @@
+#maindiv{
+    display: flex;
+}
+
+#sidediv{
+    background-color: black;
+    height: 760px;
+    width: 250px;
+    border-radius: 5px;
+    padding-left:5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    position: sticky;
+    
+}
+h1{
+    color: whitesmoke;
+    padding-top: 4px;
+    padding-left: 10px;
+    text-align:left ;
+}
+.sidebtn{
+    width: 200px;
+    height: 40px;
+    text-align: left;
+    border-style: none;
+    cursor: pointer;
+    color: white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(71, 63, 63);
+}
+.sidebtn:hover{
+    background-color: grey;
+    
+}
+
+p{
+    color:grey;
+}
+#navdiv{
+    width:auto;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 5px;
+    padding-left: 910px;
+    background-color: grey;
+    text-align: right;
+}
+
+.navbtn{
+    height: 40px;
+    color: white;
+    background-color: grey;
+    border-style: none;
+    cursor: pointer;
+    font-style: italic;
+    font-size:large;
+}
+.navbtn:hover{
+    color: black;
+}
+#dashdiv{
+    display:flex ;
+    background-color: cadetblue;
+    padding: 40px;
+    gap: 50px;
+}
+#first,#second,#third,#fourth{
+    background-color: black;
+    color: white;
+    height: 150px;
+    width: 250px;
+    padding-top: 10px;
+    border-radius: 20px;
+    text-align: center;
+    text-align-last: center;
+    
+    
+}
+#catdiv{
+    margin: 10px;
+    width: 400px;
+    height: fit-content;
+    background-color: rgb(146, 181, 181);
+    padding: 50px;
+    /* gap: 50px; */
+}
+#catin,#agein{
+    width:fit-content;
+    height: 30px;
+    padding: 5px;
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+#addbtn{
+    width:90px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 2px;
+    font-size: large;
+}
+#addbtn:hover{
+   
+    border-style: none;
+
+}
+.table{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
